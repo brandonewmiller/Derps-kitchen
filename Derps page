@@ -1,0 +1,81 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Derp’s Kitchen</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #fffdf7; }
+    header { background: #ff7f50; color: white; padding: 1em; text-align: center; }
+    nav a { margin: 0 1em; color: white; text-decoration: none; font-weight: bold; }
+    .section { padding: 2em; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1em; }
+    .card { border: 1px solid #ddd; border-radius: 12px; overflow: hidden; background: white; box-shadow: 2px 2px 6px rgba(0,0,0,0.1); transition: transform 0.2s; }
+    .card:hover { transform: scale(1.02); }
+    .card img { width: 100%; height: 160px; object-fit: cover; }
+    .card h3 { margin: 0.5em; font-size: 1.1em; color: #333; }
+    .recipe-detail { padding: 1em; background: #fafafa; border-radius: 12px; margin-top: 1em; }
+    footer { text-align:center; padding: 1em; background:#f4f4f4; margin-top: 2em; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Derp’s Kitchen</h1>
+    <nav>
+      <a href="#breakfast">Breakfast</a>
+      <a href="#lunch">Lunch</a>
+      <a href="#dinner">Dinner</a>
+    </nav>
+  </header>  <!-- Breakfast Section -->  <section id="breakfast" class="section">
+    <h2>Breakfast</h2>
+    <div class="grid">
+      <div class="card"><img src="https://www.allrecipes.com/thmb/-NqfC6qPISZk9cfDfnANvT-4rmE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/AR-banana-pancakes-hero-2x1-39f8c3f77c9341e1b6edb27b3f7e99a6.jpg" alt="Banana Pancakes"><h3>Banana Pancakes</h3></div>
+      <div class="card"><img src="https://www.loveandlemons.com/wp-content/uploads/2019/08/avocado-toast.jpg" alt="Avocado Toast"><h3>Avocado Toast</h3></div>
+      <div class="card"><img src="https://www.loveandlemons.com/wp-content/uploads/2020/07/smoothie.jpg" alt="Fruit Smoothie"><h3>Fruit Smoothie</h3></div>
+      <div class="card"><img src="https://www.allrecipes.com/thmb/IcdyFh3r10T19sQqTtUnWFWF8fY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/AR-omelet-hero-2x1-1.jpg" alt="Cheese Omelet"><h3>Cheese Omelet</h3></div>
+      <div class="card"><img src="https://www.allrecipes.com/thmb/0ad4RrQ7k5Gm8A9CfrPj_c6W_Tg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/AR-french-toast-hero-2x1.jpg" alt="French Toast"><h3>French Toast</h3></div>
+      <!-- Add more breakfast cards up to ~17 -->
+    </div>
+  </section>  <!-- Lunch Section -->  <section id="lunch" class="section">
+    <h2>Lunch</h2>
+    <div class="grid">
+      <div class="card"><img src="https://www.realsimple.com/thmb/7R56CE1q6mHAcw2c29jWbTuTp2o=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/bean-salad-getty-0224-2000-cb9b5ed35a044df3972b962431b80bd7.jpg" alt="Bean Salad"><h3>Bean Salad</h3></div>
+      <div class="card"><img src="https://www.seriouseats.com/thmb/I5Aw7L2XmfOXY3cXb9YbSHcULPg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/20210907-feta-lettuce-wraps-vicky-wasik-seriouseats-hero-5b2b9fda70f448c38eb72bb92f25bfb4.jpg" alt="Feta Lettuce Cups"><h3>Feta Lettuce Cups</h3></div>
+      <div class="card"><img src="https://www.allrecipes.com/thmb/2h5MuafJ4oFXhSknA7HNOtdHVtQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/image-2000x1125-AR-chicken-fried-rice-3x2-1.jpg" alt="Chicken Fried Rice"><h3>Chicken Fried Rice</h3></div>
+      <div class="card"><img src="https://www.allrecipes.com/thmb/Bf8FoCim-5p2iQg4ZyKqtk0Mz3Y=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/pesto-pasta-ddmfs-hero-3x2-1-1a872a5f0c4d4f54a5a94c4d17198e6a.jpg" alt="Pesto Pasta"><h3>Pesto Pasta</h3></div>
+      <div class="card"><img src="https://www.allrecipes.com/thmb/3qFkoVgkYtZzKUb3D0mW9Wl4f0o=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/chickpea-tacos-ddmfs-hero-3x2-1-0cde644a06cb4713a82ea735d3348b6a.jpg" alt="Chickpea Tacos"><h3>Chickpea Tacos</h3></div>
+      <!-- Add more lunch cards up to ~17 -->
+    </div>
+  </section>  <!-- Dinner Section -->  <section id="dinner" class="section">
+    <h2>Dinner</h2>
+    <div class="grid">
+      <div class="card"><img src="https://www.simplyrecipes.com/thmb/K1lQem29tQXOysZuz-B_U0VKfjQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Simply-Recipes-Lemon-Pepper-Chicken-Breasts-LEAD-5-c0d9b1f25a97479b9e47430258e24d7a.jpg" alt="Lemon Pepper Chicken"><h3>Lemon Pepper Chicken</h3></div>
+      <div class="card"><img src="https://www.simplyrecipes.com/thmb/3Vj3FENF0HfQVeOkcbhPszsLmkw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Simply-Recipes-Cacio-e-Pepe-Tortellini-LEAD-1-8e27dcfc60954c71a4ecb4dbf1349ef6.jpg" alt="Cacio e Pepe Tortellini"><h3>Cacio e Pepe Tortellini</h3></div>
+      <div class="card"><img src="https://www.simplyrecipes.com/thmb/z4Q7mX6NnmdTFOwKTVE3GhQY9yo=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Simply-Recipes-Red-Curry-Poached-Salmon-LEAD-1-09f5917c8f3740a485e2f0d5580c391a.jpg" alt="Red Curry Poached Salmon"><h3>Red Curry Poached Salmon</h3></div>
+      <div class="card"><img src="https://www.simplyrecipes.com/thmb/0jGqED6pECt-eJojzL48UqDnrbM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Simply-Recipes-Burger-Salad-LEAD-1-25c5276e640348e9a7cb6c0de9d2f3a0.jpg" alt="Burger Salad"><h3>Burger Salad</h3></div>
+      <div class="card"><img src="https://www.simplyrecipes.com/thmb/Ch9j4eAHr2TcrJdu1U2Y8zTSfC4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Simply-Recipes-Chop-Suey-LEAD-1-84e77f1c9fa44e1e9c1d42de40d21c06.jpg" alt="Chop Suey"><h3>Chop Suey</h3></div>
+      <!-- Add more dinner cards up to ~16 -->
+    </div><div class="recipe-detail">
+  <h3>🍋 Easy Lemon Pepper Chicken (Example Recipe)</h3>
+  <p><strong>Ingredients:</strong></p>
+  <ul>
+    <li>2 boneless chicken breasts</li>
+    <li>2 tbsp olive oil</li>
+    <li>1 lemon (juice + zest)</li>
+    <li>1 tsp black pepper</li>
+    <li>1 tsp salt</li>
+    <li>1 tsp garlic powder</li>
+  </ul>
+  <p><strong>Instructions:</strong></p>
+  <ol>
+    <li>Pat chicken dry and season with salt, pepper, and garlic powder.</li>
+    <li>Heat olive oil in a skillet over medium heat.</li>
+    <li>Cook chicken for 5–6 minutes per side until golden and cooked through.</li>
+    <li>Squeeze lemon juice over chicken and sprinkle with zest before serving.</li>
+  </ol>
+  <p><em>Ready in 20 minutes. Serve with rice or roasted veggies.</em></p>
+</div>
+
+  </section>  <footer>
+    &copy; 2025 Derp’s Kitchen. All rights reserved.
+  </footer>
+</body>
+</html>
